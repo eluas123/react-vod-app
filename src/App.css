@@ -1,0 +1,60 @@
+header {
+    background: #000;
+    min-height: 60px;
+}
+
+main {
+    min-height: 400px;
+    background-image: url(../public/popcorn.jpg);
+    background-size: 50%;
+    background-position: center;
+}
+
+.container-info {
+    min-height: 600px;
+}
+
+.container {
+    min-height: 40px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 750;
+    color: white;
+}
+
+.sort {
+    font-size: 21px;
+    font-weight: 750;
+}
+
+.info {
+    font-weight: 750;
+    color: white;
+}
+
+h5 {
+    font-weight: 750;
+}
+
+.years {
+    margin-left: 12px;
+}
+
+body {
+    background: #000;
+}
+
+@media(max-width: 768px) {
+    main {
+        min-height: 400px;
+        background-image: url(../public/popcorn.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
