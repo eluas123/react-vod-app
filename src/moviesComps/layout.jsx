@@ -9,9 +9,9 @@ export default function Layout() {
           <h1 className='text-danger ps-5'>VOD APP</h1>
           </header>
           <AppMovies/>
-      <header className='text-center'>
+      <footer className='text-center'>
       <div className='sort text-danger mt-5 p-3'>©Elias Areta - 2022</div>
-      </header>
+      </footer>
     </React.Fragment>
   )
 }

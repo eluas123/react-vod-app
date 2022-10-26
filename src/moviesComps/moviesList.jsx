@@ -14,19 +14,20 @@ export default function MoviesList() {
 />
        </div> :
     <div className='container'>
+        {ar==undefined?<div className='text-center text-white display-3 mt-4'>There is no Result</div>:
         <div className="row">
             {ar.map(item =>{
                 return(
-                    <div key={item.imdbID} className="col-lg-6 p-3">
+                    <div key={item.imdbID} className="col-lg-6 p-3 box">
                         <div className='p-2 shadow overflow-hidden'>
-                        <img src={item.Poster || "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} className="float-start me-2" height='160'/>
+                        <img src={item.Poster=='N/A'? "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2":item.Poster} className="float-start me-2 w-25" height='150'/>
                         <h2>{item.Title}</h2>
                         <Link className='btn btn-danger info' to={"/video/"+item.imdbID}>Information</Link>
                     </div>
                     </div>
                 )
             })}
-        </div>
+        </div>}
         </div>}
     </div>
   )
